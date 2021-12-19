@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@400;600;900&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in 0.75in 0.75in 0.75in;
+  counter-increment: page;
+  
+  @bottom-right {
+    padding-right:20px;
+    content: "Page " counter(page);
+    }
+}
+     
+
+body {
+  max-width: 600px;
+  margin: 3em auto 6em;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+caption {
+  caption-side: top;
+}
+
+p.caption {
+  font-size: 11pt;
+}
+
+html {
+  font-size: 12pt;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  /*font-family: 'Source Serif Pro', serif;*/
+  text-align: justify;
+  font-size: 12pt;
+  hyphens: auto;
+}
+
+.csl-entry {
+  text-align: initial;
+  margin-bottom: 0.333em;
+  margin-top: 0.333em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-column-break-after: avoid;
+  column-break-after: avoid;
+  break-after: avoid;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: bold;
+  hyphens: none;
+}
+
+
+h1 {
+  font-size: 1.3333333333333333em;
+}
+h2 {
+  font-size: 14pt;
+}
+h3 {
+  font-size: 12pt;
+  font-weight: 500 !important;
+}
+h4 {
+  font-size: 1.2222222222222223em;
+}
+h5 {
+  font-size: 1.2222222222222223em;
+}
+h6 {
+  font-size: 1.2222222222222223em;
+}
+
+p {
+  /*margin: 0 0 0.5em;*/
+  margin: 0.5em 0 0.5em;
+  line-height: 1.5;
+  text-indent: 0;
+
+}
+
+small {
+  font-size: 0.7777777777777778em;
+}
+
+caption {
+  margin: 0 0 4pt;
+  font-weight: bold;
+}
+figure {
+  margin: 1.333em 0 2.333em;
+  text-align: center;
+}
+figcaption {
+  font-weight: bold;
+}
+
+blockquote {
+  border-left: 5px solid #eb9fa9;
+  background: whitesmoke;
+  box-shadow: 1px 1px 6px 0 darkgrey;
+}
+
+blockquote p {
+  font-size: 12pt;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+@page {
+}
+body > :first-child {
+  counter-reset: page 1;
+}
+
+
+figure {
+  counter-increment: figure;
+}
+figcaption:before {
+  content: "Figure " counter(figure) ". ";
+}
+
+.page-break-after {
+  -webkit-column-break-after: always;
+  column-break-after: always;
+  break-after: always;
+}
+.page-break-before {
+  -webkit-column-break-after: always;
+  column-break-after: always;
+  break-after: always;
+}
+
+h1, h2 {
+  margin: 1.3333333333333333em 0 0 0;
+}
+
+h1 + h2, h1 + * > h2:first-child {
+  margin-top: 0;
+}
+h3, h4 {
+  margin: 1.3333333333333333em 0 0 0;
+  font-weight: normal;
+}
+
+header {
+  column-span: all;
+  margin-bottom: 4em;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+header h2 {
+  margin: 2em 0;
+  font-size: 1.333em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 0.333em;
+  margin-left: 0.65em;
+  margin-top: 0 !important;
+  font-family: 'Poppins', sans-serif;
+  color: #292929;
+  font-size: 16pt !important;
+  text-align: left;
+  text-transform: none;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+}
+
+.author{
+  font-size: 12pt;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+.date{
+  font-size: 12pt;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.equation {
+  margin: 3pt 0;
+  text-align: center;
+}
+.equation:not(.displaymath) {
+  position: relative;
+  counter-increment: equation;
+}
+.equation:not(.displaymath):after {
+  content: "(" counter(equation) ")";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 50%;
+  line-height: 0;
+}
