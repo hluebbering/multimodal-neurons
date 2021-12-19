@@ -1,3 +1,13 @@
+# create a dataset:
+data <- data.frame(
+  from=c("A", "A", "B", "D", "C", "D", "E", "B", "C", "D", "K", "A", "M"),
+  to=c("B", "E", "F", "A", "C", "A", "B", "Z", "A", "C", "A", "B", "K")
+)
+
+# Plot
+pnetwork <- simpleNetwork(data, height="100px", width="100px")
+
+
 
 # Neuron Description Table
 df <- data.frame(
@@ -74,4 +84,25 @@ g2 <- ggplot(diamonds, aes(carat, after_stat(count), fill = cut)) +
 
 
 
+
+
+
+thm2 <- theme_ipsum() + theme(text = element_text(size = 12, family = "Roboto"),
+                              plot.caption = element_text(size = 10),
+                              legend.text = element_text(size = 8),
+                              legend.title = element_text(color = "white", size = 1),
+                              axis.text.x = element_text(size = 10, family = "Roboto Condensed"),
+                              axis.text.y = element_text(size = 10, family = "Roboto Condensed"),
+                              axis.title.x = element_text(size = 12, colour = "#252525"),
+                              axis.title.y = element_text(size = 12))
+
+g2 <- ggplot(diamonds, aes(carat, after_stat(count), fill = cut)) +
+  geom_density(position = "fill") + 
+  #  scale_fill_manual(values = c("#12403C", "#006D70", "#00AAA9", "#37B8CB", "#93D1E3")) +
+  #  scale_fill_manual(values = c("#132E53", "#283C75" ,"#1F6DB1",  "#03B7DD", "#6FC7EA", "#BADCED")) +
+  scale_fill_manual(values = c("#365947", "#708B49", "#FDD87E", "#E67C49", "#E47E9B")) +
+  ylab(label = "") + xlab(label = "Standard Deviations from Zero Activation") +
+  thm2
+
+p <- ggplotly(g2)
 
