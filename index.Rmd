@@ -37,6 +37,7 @@ source(file = "graphics.R")
 
 
 
+
 ### Introduction
 
 
@@ -64,6 +65,7 @@ p <- simpleNetwork(data, height="100px", width="100px")
 
 
 
+\ 
 
 ### Background
 

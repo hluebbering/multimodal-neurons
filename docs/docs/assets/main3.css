@@ -53,19 +53,17 @@ h6 {
   font-size: 12pt;
   margin-top: 0.2em;
   margin-bottom: 0;
-  font-weight: normal;
 }
 
 .date{
   font-size: 12pt;
   margin-top: 0.2em;
-  margin-bottom: 0.75em;
-  font-weight: normal;
+  margin-bottom: 0.5em;
 }
 
 p {
-  /*margin: 0 0 0.5em;
-  margin: 0.5em 0 0.5em;*/
+  /*margin: 0 0 0.5em;*/
+  margin: 0.5em 0 0.5em;
   line-height: 1.5;
   text-indent: 0;
 
