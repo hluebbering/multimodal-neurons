@@ -155,26 +155,26 @@ Correspondingly, @Cammarata_2020 demonstrates a tool for plotting estimated cond
 
 
 
-```{r, out.width="100%"}
-thm2 <- theme_ipsum() + theme(text = element_text(size = 12, family = "Roboto"),
-                              plot.caption = element_text(size = 10),
-                              legend.text = element_text(size = 8),
-                              legend.title = element_text(color = "white", size = 1),
-                              axis.text.x = element_text(size = 10, family = "Roboto Condensed"),
-                              axis.text.y = element_text(size = 10, family = "Roboto Condensed"),
-                              axis.title.x = element_text(size = 12, colour = "#252525"),
-                              axis.title.y = element_text(size = 12))
+```{r, out.width="100%", out.height="100%"}
+thm2 <- theme_ipsum() + theme(text = element_text(size = 12, family = "Roboto"), legend.position = "none", plot.caption = element_text(size = 10), legend.text = element_text(size = 8), legend.title = element_text(color = "white", size = 1), axis.text.x = element_text(size = 10, family = "Roboto Condensed"), axis.text.y = element_text(size = 10, family = "Roboto Condensed"), axis.title.x = element_text(size = 12, colour = "#252525"), axis.title.y = element_text(size = 12))
 
 g2 <- ggplot(diamonds, aes(carat, after_stat(count), fill = cut)) +
-  geom_density(position = "fill") + 
-#  scale_fill_manual(values = c("#12403C", "#006D70", "#00AAA9", "#37B8CB", "#93D1E3")) +
-#  scale_fill_manual(values = c("#132E53", "#283C75" ,"#1F6DB1",  "#03B7DD", "#6FC7EA", "#BADCED")) +
+  geom_density(position = "fill") +
   scale_fill_manual(values = c("#365947", "#708B49", "#FDD87E", "#E67C49", "#E47E9B")) +
   ylab(label = "") + xlab(label = "Standard Deviations from Zero Activation") +
   thm2
 
-p <- ggplotly(g2)
+m <- list(
+  l = 5,
+  r = 5,
+  b = 20,
+  t = 20,
+  pad = 4
+)
+
+p <- ggplotly(g2) %>% layout(autosize = TRUE,  margin=m, height=336)
 p
+
 ```
 
 

@@ -1,4 +1,7 @@
 name: "Multimodal Neurons in Neural Networks"
 navbar:
   title: "Multimodal Neurons in Neural Networks"
+  right:
+  - href: "https://hluebbering.github.io/"
+    icon: fa-home
   

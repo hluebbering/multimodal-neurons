@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@400;600;900&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://use.typekit.net/cre8fyv.css");
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -25,10 +26,10 @@ h1 {
   font-size: 1.3333333333333333em;
 }
 h2 {
-  font-size: 14pt;
+  font-size: 17pt;
 }
 h3 {
-  font-size: 13pt;
+  font-size: 15pt;
   font-weight: 500 !important;
 }
 h4 {
@@ -42,11 +43,12 @@ h6 {
 }
 
 .title {
-  margin-bottom: 0.333em;
-  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.01em;
+  font-family: 'Frank Ruhl Libre', serif;
   color: #292929;
-  font-size: 16pt !important;
+  font-size: 20pt !important;
   text-align: left;
+  font-weight: 800;
 }
 
 .author{
@@ -61,6 +63,10 @@ h6 {
   margin-top: 0.2em;
   margin-bottom: 0.75em;
   font-weight: normal;
+}
+
+div#header {
+  margin-bottom: 13pt;
 }
 
 p {
@@ -94,4 +100,16 @@ blockquote p {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.navbar-brand {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 9pt;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #535556 !important;
+}
+.navbar-default {
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 11%);
+}
 

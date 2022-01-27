@@ -47,7 +47,7 @@ df <- data.frame(
 
 
 df1 <- kable(df, escape = F, col.names = c("", "Description", "Examples")) %>%
-  kable_styling(full_width = F, font_size = 10, html_font = "Roboto", bootstrap_options = c("hover", "condensed")) %>%
+  kable_styling(full_width = F, font_size = 10, html_font = "Roboto", bootstrap_options = c("hover",  "striped")) %>%
   column_spec(2, color = "#00000099") %>%
   column_spec(3, color = "#00000099") %>%
   row_spec(0, background = "#E6EEE1", extra_css = "font-family: 'Roboto Condensed';") %>%
