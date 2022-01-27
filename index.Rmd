@@ -169,7 +169,7 @@ m <- list(
   r = 5,
   b = 20,
   t = 20,
-  pad = 4
+  pad = 2
 )
 
 p <- ggplotly(g2) %>% layout(autosize = TRUE,  margin=m, height=336)
